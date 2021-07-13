@@ -132,7 +132,8 @@ class _AnimateIconsState extends State<AnimateIcons>
           child: IconButton(
             iconSize: widget.size ?? 24.0,
             color: widget.startIconColor ?? Theme.of(context).primaryColor,
-            disabledColor: Colors.grey.shade500,
+            disabledColor:
+                widget.startIconColor ?? Theme.of(context).primaryColor,
             icon: widget.startTooltip == null
                 ? icon
                 : Tooltip(
@@ -155,7 +156,8 @@ class _AnimateIconsState extends State<AnimateIcons>
           child: IconButton(
             iconSize: widget.size ?? 24.0,
             color: widget.endIconColor ?? Theme.of(context).primaryColor,
-            disabledColor: Colors.grey.shade500,
+            disabledColor:
+                widget.endIconColor ?? Theme.of(context).primaryColor,
             icon: widget.endTooltip == null
                 ? icon
                 : Tooltip(
